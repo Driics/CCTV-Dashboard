@@ -1,6 +1,5 @@
 import type {Metadata} from "next";
 import "./globals.css";
-import {Footer} from "@/components/Footer";
 import {Inter as FontSans} from "next/font/google"
 import React from "react";
 import {cn} from "@/lib/utils";
@@ -22,7 +21,7 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
             fontSans.variable
         )}>
         {children}
-        <Footer/>
+        {/*<Footer/>*/}
         </body>
         </html>
     );

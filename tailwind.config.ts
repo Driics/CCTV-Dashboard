@@ -14,12 +14,13 @@ const config: Config = {
             current: 'currentColor',
             "primary": "#FFF",
             "background": {
-                DEFAULT: "#0a0a0a",
+                DEFAULT: "#111218",
                 100: "#0a0a0a"
             },
             "gray": {
                 900: "hsla(0, 0%, 63%, 1);",
                 950: "#030712",
+                100: "#1E1F29",
                 "alpha": {
                     400: "hsla(0, 0%, 100%, .14);"
                 }
@@ -29,7 +30,7 @@ const config: Config = {
             },
             "white": "#fff",
             muted: {
-                DEFAULT: "hsl(var(--muted))",
+                DEFAULT: "hsla(0, 0%, 100%, .14);",
                 foreground: "hsl(var(--muted-foreground))",
             },
         },

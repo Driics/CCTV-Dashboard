@@ -23,7 +23,7 @@ export default function Home() {
                     variant: "ghost",
                 },
             ]}/>
-            <div className="min-h-[calc(100vh-90px)] pl-4 text-sm bg-background-100 w-full">
+            <div className="min-h-[100vh] pl-4 text-sm bg-background-100 w-full">
                 <main
                     className="relative auto-rows-fr grid-rows-[auto] grid-cols-[minmax(24px,1fr)_minmax(0,1200px)_minmax(24px,1fr)] grid">
                     <section
@@ -31,7 +31,7 @@ export default function Home() {
                         <div className="flex flex-initial flex-col items-stretch justify-start gap-4 md:gap-6">
                             <form action="" method="GET">
                                 <div className="flex w-full max-w-sm items-center space-x-2">
-                                    <Input type="text" placeholder="Название"
+                                    <Input type="text" placeholder="Поиск по названию, адресу..."
                                            style={{"flex": "2 1", width: "auto"}}/>
                                     <Button type="submit"><CctvIcon className="size-4 mr-2"/> Добавить камеру</Button>
                                 </div>

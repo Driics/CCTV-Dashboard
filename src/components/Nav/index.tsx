@@ -21,7 +21,7 @@ interface NavProps {
 export function Nav({links, isCollapsed, className}: NavProps & React.HTMLAttributes<HTMLDivElement>) {
     return (
         <div
-            className={cn("group flex flex-col gap-4 py-2 w-full data-[collapsed=true]:py-2", className)}
+            className={cn("group bg-gray-100 flex flex-col gap-4 py-2 w-full data-[collapsed=true]:py-2", className)}
         >
             <nav
                 className="grid gap-1 px-2 group-[[data-collapsed=true]]:justify-center group-[[data-collapsed=true]]:px-2">
