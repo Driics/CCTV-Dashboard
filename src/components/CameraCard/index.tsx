@@ -21,23 +21,18 @@ export function CameraCard({className,}: React.HTMLAttributes<HTMLDivElement>) {
             <CardHeader className="p-4">
                 <div className="flex items-center gap-4">
                     <div className="-mr-1">
-            <span
-                className="avatar"
-                style={{
-                    "--size": "32px",
-                }}
-            >
-              <Image
-                  alt="Logo"
-                  height={32}
-                  src="/placeholder.svg"
-                  style={{
-                      aspectRatio: "32/32",
-                      objectFit: "cover",
-                  }}
-                  width={32}
-              />
-            </span>
+                        <span className="avatar">
+                            <Image
+                                alt="Logo"
+                                height={32}
+                                src="/placeholder.svg"
+                                style={{
+                                    aspectRatio: "32/32",
+                                    objectFit: "cover",
+                                }}
+                                width={32}
+                            />
+                        </span>
                     </div>
                     <div className="min-w-0 flex flex-col items-start justify-start gap-0">
                         <p className="font-medium text-primary text-sm">Ломоносова, 16</p>
