@@ -33,7 +33,7 @@ export const Footer = (props: Props) => {
                                         className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75 duration-1000"/>
                                     <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500"/>
                                 </span>
-                                Всё заебись.
+                                Всё работает нормально
                             </a>
                         </div>
                     </div>
