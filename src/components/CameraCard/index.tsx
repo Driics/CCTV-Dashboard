@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function CameraCard({className,}: React.HTMLAttributes<HTMLDivElement>) {
     return (
-        <Card className="shadow-card border-none">
+        <Card className="">
             <CardContent className="p-4">
                 <Image
                     alt="Big Image"

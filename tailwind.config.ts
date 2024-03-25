@@ -19,13 +19,19 @@ const config: Config = {
             },
             "gray": {
                 900: "hsla(0, 0%, 63%, 1);",
+                950: "#030712",
                 "alpha": {
                     400: "hsla(0, 0%, 100%, .14);"
                 }
             },
             "green": {
                 500: "#22c55e"
-            }
+            },
+            "white": "#fff",
+            muted: {
+                DEFAULT: "hsl(var(--muted))",
+                foreground: "hsl(var(--muted-foreground))",
+            },
         },
         extend: {
             fontFamily: {
