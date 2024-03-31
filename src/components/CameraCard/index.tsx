@@ -1,7 +1,7 @@
 import React from "react";
 import {Card, CardContent, CardHeader} from "@/components/ui/card";
 import Image from "next/image";
-import styles from "./style.module.css"
+import style from "./style.module.css"
 
 export function CameraCard({className,}: React.HTMLAttributes<HTMLDivElement>) {
     return (
@@ -22,12 +22,7 @@ export function CameraCard({className,}: React.HTMLAttributes<HTMLDivElement>) {
             <CardHeader className="p-4">
                 <div className="flex items-center gap-4">
                     <div className="-mr-1">
-                        <span
-                            className={styles.avatar}
-                            style={{
-                                "--size": "32px",
-                            }}
-                        >
+                        <span className={style.avatar}>
                             <Image
                                 alt="Logo"
                                 height={32}
@@ -44,7 +39,7 @@ export function CameraCard({className,}: React.HTMLAttributes<HTMLDivElement>) {
                         <p className="font-medium text-primary text-sm">Ломоносова, 16</p>
                         <p className="font-normal text-gray-900 text-sm">Тесе</p>
                     </div>
-                    <a href="/dashboard" className={styles.cardLink}></a>
+                    <a href="/dashboard" className={style.cardLink}></a>
                 </div>
             </CardHeader>
         </Card>
