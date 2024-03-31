@@ -1,14 +1,9 @@
 import Image from "next/image";
 import {MapPin} from "lucide-react";
 
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/VDLYoTKAuH7
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
 export default function Component() {
     return (
-        <div className="flex h-full text-white">
+        <div className="flex h-full text-white container mx-auto">
             <div className="flex flex-col w-1/2 p-4">
                 <Image
                     alt="City view"
@@ -24,10 +19,16 @@ export default function Component() {
             </div>
             <div className="flex flex-col w-1/2 p-4 space-y-4">
                 <div className="flex items-center justify-between p-4 bg-[#1a1a1d] rounded-lg">
-                    <div className="flex items-center space-x-4">
+                    <div className="inline-flex items-center space-x-4">
                         <div>
                             <h2 className="text-lg font-bold">Статус</h2>
-                            <p className="text-sm">Работает</p>
+                            <p className="text-sm text-green-500 inline-flex items-center gap-2">
+                                <span className="relative flex h-2 w-2">
+                                    <span
+                                        className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75 duration-1000"/>
+                                    <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500"/>
+                                </span>
+                                Работает</p>
                         </div>
                     </div>
                     <div>
