@@ -1,6 +1,55 @@
 import Image from "next/image";
 import {MapPin} from "lucide-react";
 
+const contentData = [
+    {
+        title: "Статус",
+        value: (
+            <p className="text-sm text-green-500 inline-flex items-center gap-2">
+        <span className="relative flex h-2 w-2">
+          <span
+              className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75 duration-1000"/>
+          <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500"/>
+        </span>
+                Работает
+            </p>
+        ),
+    },
+    {
+        title: "IP",
+        value: <p className="text-sm">87.67.80.25</p>,
+    },
+    {
+        title: "Адрес",
+        value: (
+            <div className="flex items-center gap-2">
+                <MapPin/>
+                <p className="text-sm">г. Воронеж, ул. Московская, д. 147</p>
+            </div>
+        ),
+    },
+    {
+        title: "Тип",
+        value: <p className="text-sm">Стационарная камера</p>,
+    },
+    {
+        title: "Направленность",
+        value: <p className="text-sm">Навстречу потоку</p>,
+    },
+    {
+        title: "Направление потока",
+        value: <p className="text-sm">3°</p>,
+    },
+    {
+        title: "Длинна зоны оповещения",
+        value: <p className="text-sm">15°</p>,
+    },
+    {
+        title: "Скорость",
+        value: <p className="text-sm">90 км/ч всегда</p>,
+    },
+];
+
 export default function Component() {
     return (
         <div className="flex h-full text-white container mx-auto">
@@ -18,57 +67,19 @@ export default function Component() {
                 />
             </div>
             <div className="flex flex-col w-1/2 p-4 space-y-4">
-                <div className="flex items-center justify-between p-4 bg-[#1a1a1d] rounded-lg">
-                    <div className="inline-flex items-center space-x-4">
-                        <div>
-                            <h2 className="text-lg font-bold">Статус</h2>
-                            <p className="text-sm text-green-500 inline-flex items-center gap-2">
-                                <span className="relative flex h-2 w-2">
-                                    <span
-                                        className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75 duration-1000"/>
-                                    <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500"/>
-                                </span>
-                                Работает</p>
+                {contentData.map((item, index) => (
+                    <div
+                        key={index}
+                        className="p-4 bg-[#1a1a1d] rounded-lg"
+                    >
+                        <div className="flex items-center justify-between">
+                            <div>
+                                <h2 className="text-lg font-bold">{item.title}</h2>
+                            </div>
+                            <div>{item.value}</div>
                         </div>
                     </div>
-                    <div>
-                        <h2 className="text-lg font-bold">IP</h2>
-                        <p className="text-sm">192.168.1.1</p>
-                    </div>
-                </div>
-                <div className="p-4 bg-[#1a1a1d] rounded-lg">
-                    <div className="flex">
-                        <MapPin/>
-                        <h2 className="text-lg font-bold mb-2">Адрес</h2>
-                    </div>
-                    <p className="text-sm">г. Воронеж, ул. Московская, д. 147</p>
-                </div>
-                <div className="p-4 bg-[#1a1a1d] rounded-lg">
-                    <h2 className="text-lg font-bold mb-2">Ошибка</h2>
-                    <p className="text-sm">WARNING: Failed to activate VS environment: Could not...</p>
-                </div>
-                <div className="grid grid-cols-2 gap-4">
-                    <div className="p-4 bg-[#1a1a1d] rounded-lg">
-                        <h2 className="text-lg font-bold mb-2">V(Batt)</h2>
-                        <p className="text-sm">35v</p>
-                    </div>
-                    <div className="p-4 bg-[#1a1a1d] rounded-lg">
-                        <h2 className="text-lg font-bold mb-2">Kg(Килограммы)</h2>
-                        <p className="text-sm">228kg</p>
-                    </div>
-                    <div className="p-4 bg-[#1a1a1d] rounded-lg">
-                        <h2 className="text-lg font-bold mb-2">T(Тягенс)</h2>
-                        <p className="text-sm">111T</p>
-                    </div>
-                    <div className="p-4 bg-[#1a1a1d] rounded-lg">
-                        <h2 className="text-lg font-bold mb-2">A(Арбузы)</h2>
-                        <p className="text-sm">8A</p>
-                    </div>
-                    <div className="p-4 bg-[#1a1a1d] rounded-lg">
-                        <h2 className="text-lg font-bold mb-2">H(разы)</h2>
-                        <p className="text-sm">5H</p>
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
     )
