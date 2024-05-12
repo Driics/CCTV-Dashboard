@@ -14,7 +14,7 @@ const config: Config = {
             current: 'currentColor',
             "primary": "#FFF",
             "background": {
-                DEFAULT: "#111218",
+                DEFAULT: "#1a1a1a",
                 100: "#0a0a0a"
             },
             "gray": {

@@ -3,6 +3,7 @@ import "./globals.css";
 import {Inter as FontSans} from "next/font/google"
 import React from "react";
 import {cn} from "@/lib/utils";
+import {Footer} from "@/components/Footer";
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -21,7 +22,7 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
             fontSans.variable
         )}>
         {children}
-        {/*<Footer/>*/}
+        <Footer/>
         </body>
         </html>
     );

@@ -4,7 +4,7 @@ import {CameraCard} from "@/components/CameraCard";
 import {Input} from "@/components/ui/input";
 import {Button} from "@/components/ui/button";
 import {Nav} from "@/components/Nav";
-import {CctvIcon, Inbox, Settings2Icon} from "lucide-react";
+import {CctvIcon, FileScan, Inbox, Settings2Icon} from "lucide-react";
 import React from "react";
 
 export default function Home() {
@@ -22,8 +22,13 @@ export default function Home() {
                     icon: Settings2Icon,
                     variant: "ghost",
                 },
+                {
+                    title: "Проверка видео",
+                    icon: FileScan,
+                    variant: "ghost"
+                }
             ]}/>
-            <div className="min-h-[100vh] pl-4 text-sm bg-background-100 w-full">
+            <div className="min-h-[88vh] pl-4 text-sm w-full">
                 <main
                     className="relative auto-rows-fr grid-rows-[auto] grid-cols-[minmax(24px,1fr)_minmax(0,1200px)_minmax(24px,1fr)] grid">
                     <section
