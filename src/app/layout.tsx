@@ -1,9 +1,9 @@
 import type {Metadata} from "next";
 import "./globals.css";
-import {Footer} from "@/components/Footer";
 import {Inter as FontSans} from "next/font/google"
 import React from "react";
 import {cn} from "@/lib/utils";
+import {Footer} from "@/components/Footer";
 
 export const metadata: Metadata = {
     title: "Create Next App",

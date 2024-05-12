@@ -12,7 +12,7 @@ export const Footer = (props: Props) => {
     }
 
     return (
-        <footer className="bg-background-100  border-t border-gray-alpha-400 px-8 py-7 pb-8">
+        <footer className="bg-[#222] border-t border-gray-alpha-400 px-8 py-7 pb-8">
             <nav className="flex max-w-xl max-lg:w-full max-lg:flex-col flex-nowrap justify-between m-auto"
                  aria-label="DemonsIT Directory" role="navigation">
                 <div className="flex items-center gap-5 justify-between w-full">
@@ -33,7 +33,7 @@ export const Footer = (props: Props) => {
                                         className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75 duration-1000"/>
                                     <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500"/>
                                 </span>
-                                Всё работает нормально
+                                Всё работает.
                             </a>
                         </div>
                     </div>

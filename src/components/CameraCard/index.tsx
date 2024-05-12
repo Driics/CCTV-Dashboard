@@ -5,7 +5,7 @@ import style from "./style.module.css"
 
 export function CameraCard({className,}: React.HTMLAttributes<HTMLDivElement>) {
     return (
-        <Card className="">
+        <Card>
             <CardContent className="p-4">
                 <Image
                     alt="Big Image"

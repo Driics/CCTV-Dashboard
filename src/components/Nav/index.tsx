@@ -21,7 +21,7 @@ interface NavProps {
 export function Nav({links, isCollapsed, className}: NavProps & React.HTMLAttributes<HTMLDivElement>) {
     return (
         <div
-            className={cn("group flex flex-col gap-4 py-2 w-full data-[collapsed=true]:py-2", className)}
+            className={cn("group bg-[#222] flex flex-col gap-4 py-2 w-full data-[collapsed=true]:py-2", className)}
         >
             <nav
                 className="grid gap-1 px-2 group-[[data-collapsed=true]]:justify-center group-[[data-collapsed=true]]:px-2">
@@ -56,7 +56,7 @@ export function Nav({links, isCollapsed, className}: NavProps & React.HTMLAttrib
                             className={cn(
                                 buttonVariants({variant: link.variant, size: "sm"}),
                                 link.variant === "default" &&
-                                "dark:bg-muted dark:text-white dark:hover:bg-muted dark:hover:text-white",
+                                "text-white dark:bg-muted dark:text-white dark:hover:bg-muted dark:hover:text-white",
                                 "justify-between w-full"
                             )}
                         >
