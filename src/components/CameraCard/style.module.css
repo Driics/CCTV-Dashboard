@@ -7,7 +7,7 @@
     display: inline-block;
     overflow: hidden;
     border: none;
-    border-radius: 1.5px;
+    border-radius: 2px;
     vertical-align: top;
     line-height: 0;
     transition: border .2s ease, background .2s ease;

@@ -5,13 +5,13 @@ import style from "./style.module.css"
 
 export function CameraCard({className,}: React.HTMLAttributes<HTMLDivElement>) {
     return (
-        <Card>
+        <Card className={className}>
             <CardContent className="p-4">
                 <Image
                     alt="Big Image"
                     className="object-cover w-full h-64 rounded-lg"
                     height={400}
-                    src="/placeholder.svg"
+                    src="/img.png"
                     style={{
                         aspectRatio: "800/400",
                         objectFit: "cover",
@@ -37,11 +37,11 @@ export function CameraCard({className,}: React.HTMLAttributes<HTMLDivElement>) {
                     </div>
                     <div className="min-w-0 flex flex-col items-start justify-start gap-0">
                         <p className="font-medium text-primary text-sm">Ломоносова, 16</p>
-                        <p className="font-normal text-gray-900 text-sm">Тесе</p>
+                        <p className="font-normal text-gray-900 text-sm">Работает штатно</p>
                     </div>
-                    <a href="/dashboard" className={style.cardLink}></a>
                 </div>
             </CardHeader>
+            <a href="/dashboard" className={style.cardLink}></a>
         </Card>
     )
 }

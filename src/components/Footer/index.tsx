@@ -21,7 +21,7 @@ export const Footer = (props: Props) => {
                             <Link href={"/"}>
                                 <Logo className="size-6"/>
                             </Link>
-                            <p className="text-sm whitespace-nowrap font-sans text-gray-900">
+                            <p className="text-sm whitespace-nowrap font-sans font-medium text-gray-900">
                                 © {new Date().getFullYear()}
                             </p>
                         </div>

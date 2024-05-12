@@ -34,7 +34,7 @@ export default function Home() {
                     className="relative auto-rows-fr grid-rows-[auto] grid-cols-[minmax(24px,1fr)_minmax(0,1200px)_minmax(24px,1fr)] grid">
                     <section
                         className="col-span-full relative auto-rows-fr grid-rows-[auto] grid-cols-[minmax(24px,1fr)_minmax(0,1200px)_minmax(24px,1fr)] grid container mx-auto py-6">
-                        <div className="flex flex-initial flex-col items-stretch justify-start gap-4 md:gap-6">
+                        <div className="flex flex-initial flex-col items-stretch justify-start gap-4 md:gap-6 ">
                             <form action="" method="GET">
                                 <div className="flex w-full max-w-sm items-center space-x-2">
                                     <Input type="text" placeholder="Поиск по названию, адресу..."
