@@ -14,7 +14,8 @@ interface NavProps {
         title: string
         label?: string
         icon: LucideIcon
-        variant: "default" | "ghost"
+        variant: "default" | "ghost",
+        link?: string
     }[]
 }
 
@@ -52,7 +53,7 @@ export function Nav({links, isCollapsed, className}: NavProps & React.HTMLAttrib
                     ) : (
                         <Link
                             key={index}
-                            href="#"
+                            href={link.link ?? "#"}
                             className={cn(
                                 buttonVariants({variant: link.variant, size: "sm"}),
                                 link.variant === "default" &&
