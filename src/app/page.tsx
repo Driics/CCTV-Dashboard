@@ -25,7 +25,8 @@ export default function Home() {
                 {
                     title: "Проверка видео",
                     icon: FileScan,
-                    variant: "ghost"
+                    variant: "ghost",
+                    link: "/video"
                 }
             ]}/>
             <div className="min-h-[88vh] pl-4 text-sm w-full">
